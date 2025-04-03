@@ -1,22 +1,22 @@
 # Sword
 
-to run my appliaction all you have to run the java file,
-then type in the file you want to analyse with the file type included,
+to run my appliaction all you have to run the java file,<br>
+then type in the file you want to analyse with the file type included,<br>
 say if you want it to be case sensitive by pressing "y" and if not press enter and the program will run
 
 example:
-Enter the file name (with extension):
-sample.txt
-do you which for this to be case sensitive? (y): 
-y
-Number of characters in the file: 58
-Character count: 
-e : 12
-d : 6
-h : 5
-t : 5
-o : 4
-r : 4
-f : 2
-i : 2
+Enter the file name (with extension):<br>
+sample.txt<br>
+do you which for this to be case sensitive? (y): <br>
+y<br>
+Number of characters in the file: 58<br>
+Character count: <br>
+e : 12<br>
+d : 6<br>
+h : 5<br>
+t : 5<br>
+o : 4<br>
+r : 4<br>
+f : 2<br>
+i : 2<br>
 u : 2
