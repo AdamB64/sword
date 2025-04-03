@@ -13,13 +13,8 @@ public class ReadFileLineByLineUsingScanner {
             Scanner reader = new Scanner(System.in);
             System.out.println("Enter the file name (with extension): ");
             Scanner scanner = new Scanner(new File(reader.nextLine()));
-            System.out.println("do you which for this to be case sensitive? (y/n): ");
+            System.out.println("do you which for this to be case sensitive? (y): ");
             String caseSensitive = reader.nextLine();
-            while (!caseSensitive.equalsIgnoreCase("y") &&
-                    !caseSensitive.equalsIgnoreCase("n")) {
-                System.out.println("Invalid input, please enter y or n");
-                caseSensitive = reader.nextLine();
-            }
             reader.close();
             String file = "";
 
@@ -29,6 +24,10 @@ public class ReadFileLineByLineUsingScanner {
 
             // System.out.println(file.length() + "\n");
             // System.out.println(file.charAt(0) + "\n");
+
+            if (caseSensitive.equalsIgnoreCase("y")) {
+                file = file.toLowerCase();
+            }
 
             int count = 0;
 
