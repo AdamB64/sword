@@ -13,6 +13,13 @@ public class ReadFileLineByLineUsingScanner {
             Scanner reader = new Scanner(System.in);
             System.out.println("Enter the file name (with extension): ");
             Scanner scanner = new Scanner(new File(reader.nextLine()));
+            System.out.println("do you which for this to be case sensitive? (y/n): ");
+            String caseSensitive = reader.nextLine();
+            while (!caseSensitive.equalsIgnoreCase("y") &&
+                    !caseSensitive.equalsIgnoreCase("n")) {
+                System.out.println("Invalid input, please enter y or n");
+                caseSensitive = reader.nextLine();
+            }
             reader.close();
             String file = "";
 
