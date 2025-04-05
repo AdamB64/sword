@@ -11,8 +11,7 @@ public class sword {
     public static void main(String[] args) {
         try {
             Scanner reader = new Scanner(System.in);
-            System.out.println("Enter the file name (with extension): ");
-            Scanner scanner = new Scanner(new File(reader.nextLine()));
+            Scanner scanner = new Scanner(new File(args[0]));
             System.out.println("do you which for this to be case sensitive? (y): ");
             String caseSensitive = reader.nextLine();
             reader.close();
@@ -25,7 +24,7 @@ public class sword {
             // System.out.println(file.length() + "\n");
             // System.out.println(file.charAt(0) + "\n");
 
-            if (caseSensitive.equalsIgnoreCase("y")) {
+            if (!caseSensitive.equals("y")) {
                 file = file.toLowerCase();
             }
 
