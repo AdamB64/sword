@@ -10,6 +10,10 @@ public class sword {
 
     public static void main(String[] args) {
         try {
+            if (args.length == 0) {
+                System.out.println("Please provide a file name as a command line argument.");
+                return;
+            }
             Scanner reader = new Scanner(System.in);
             Scanner scanner = new Scanner(new File(args[0]));
             System.out.println("do you which for this to be case sensitive? (y): ");
